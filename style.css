@@ -1,0 +1,140 @@
+body {
+        background-color: #f4f0f4;
+        font-family: arial,sans-serif;
+        text-align: center;
+        padding: 50px;
+
+}
+h1{
+    color: #6a0dad;
+    font-size: 36px;
+    margin-bottom: 15px;
+
+}
+p{
+    color: #777;
+    font-size: 18px;
+    font-weight: normal;
+}
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+   width: 100%;
+   box-sizing: border-box;
+   
+}
+
+input:focus{
+    outline: none;
+    border-color: #6a0dad;
+}
+
+
+#addButton {
+    padding: 10px 25px;
+}
+
+#addButton:hover {
+   background-color: #5a0099;
+}
+
+
+
+
+
+
+#taskList{
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+li{
+    background-color: #f8f4ff;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+    
+}
+li span{
+    flex: 1;
+    text-align: left;
+}
+li:hover{
+    transform: translateY(-2px);
+}
+
+
+.delete-btn{
+    background-color: #e74c3c;
+}
+.delete-btn:hover{
+    background-color: #c0392b;
+}
+
+.edit-btn {
+    background-color: #3498db;
+}
+.edit-btn:hover {
+    background-color: #2980b9;
+}
+
+
+.done-btn{
+    background-color: #27ae60;
+}
+.done-btn:hover{
+    background-color: #219150;
+}
+
+
+ button{
+    padding: 8px 12px;
+    background-color: #76518a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+ }
+ .edit-btn,.delete-btn,.done-btn{
+    width: 65px;
+ }
+.todo-container{
+              max-width: 500px;
+              margin: 50px auto;
+              background-color: white;
+              padding: 30PX;
+              border-radius: 15PX;
+              box-shadow: 0 4px 15px rgba(0,0 green, 0, l);
+
+
+ }
+
+
+
+ @media(max-width:600px){
+    body{
+        padding: 15px;
+
+    }
+    .todo-container{
+        margin: 20px auto;
+        padding: 20px;
+    }
+    button{
+        padding: 6px 8px;
+        font-size: 12px;
+    }
+ }
+ 
+ 
